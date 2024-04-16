@@ -2,7 +2,7 @@
 
 This repository contains the SPARKS methodology, a comprehensive solution designed to bridge the gap between expert knowledge and data-driven artificial intelligence in Industry 4.0 contexts. SPARKS offers a systematic procedure for experts to intuitively transform their insights on production flows and system faults into a domain-specific ontology using a user-friendly Graphical User Interface (GUI). Additionally, the repository showcases the utilization of structured documents, such as Programmable Logic Controller (PLC) code, as an essential component in modeling process flows. 
 
-<img src="img/methodology.png" alt="SPARKS Methodology" style="width:100px;"/>
+<img src="img/methodology.png" alt="SPARKS Methodology" style="width:500px;"/>
 
 The SPARKS upper ontology can be found in within the docs folder and the documentation itself is made available at: [https://predict-idlab.github.io/SPARKS/](https://predict-idlab.github.io/SPARKS/)
 
