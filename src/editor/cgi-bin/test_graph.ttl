@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix sparks: <https://sparks.idlab.ugent.be/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+<https://www.example.com/sparks/procedure/2/processoutput/0> rdfs:label "Call_2_3" ;
+    rdfs:type sparks:ProcessOutput ;
+    sparks:isProcessOutputOf <https://www.example.com/sparks/procedure/2> .
+
+<https://www.example.com/sparks/system/61> a ssn:system ;
+    rdf:description "Robot04" ;
+    ssn:actsOnProperty <https://www.example.com/sparks/system/61/actuatableproperty/0>,
+        <https://www.example.com/sparks/system/61/actuatableproperty/1> ;
+    ssn:observes <https://www.example.com/sparks/system/61/observableproperty/0> .
+
+<https://www.example.com/sparks/system/63> a ssn:system ;
+    rdf:description "Modezone" ;
+    ssn:observes <https://www.example.com/sparks/system/63/observableproperty/0> .
+
+<https://www.example.com/sparks/procedure/1/processinput/0> rdfs:label "\"_Robot04_Data\".StatusRobot.Rob_InSimuHomePos" ;
+    rdfs:type sparks:ProcessInput ;
+    sparks:isProcessInputOf <https://www.example.com/sparks/procedure/1> .
+
+<https://www.example.com/sparks/procedure/1/processoutput/0> rdfs:label "\"_Robot04FC\".AD_RobInSimuHomePos" ;
+    rdfs:type sparks:ProcessOutput ;
+    sparks:isProcessOutputOf <https://www.example.com/sparks/procedure/1> .
+
+<https://www.example.com/sparks/procedure/59/processinput/0> rdfs:label "\"_Robot04_Data\".FromRob.doBreakReleased" ;
+    rdfs:type sparks:ProcessInput ;
+    sparks:isProcessInputOf <https://www.example.com/sparks/procedure/59> .
+
+<https://www.example.com/sparks/procedure/59/processinput/2> rdfs:label "\"_MZPIBC1_OpDesk\".SwAS2_T1" ;
+    rdfs:type sparks:ProcessInput ;
+    sparks:isProcessInputOf <https://www.example.com/sparks/procedure/59> .
+
+<https://www.example.com/sparks/procedure/59/processinput/3> rdfs:label "\"_MZPIBC1_OpDesk\".SwAS1_Cleaning" ;
+    rdfs:type sparks:ProcessInput ;
+    sparks:isProcessInputOf <https://www.example.com/sparks/procedure/59> .
+
+<https://www.example.com/sparks/procedure/60/processoutput/0> rdfs:label "\"_Robot04FC\".ResetAfterBreakReleased" ;
+    rdfs:type sparks:ProcessOutput ;
+    sparks:isProcessOutputOf <https://www.example.com/sparks/procedure/60> .
+
+<https://www.example.com/sparks/process/3> a sparks:process ;
+    rdf:description "\"Robot04Safety\"()" ;
+    sparks:hasProcedure <https://www.example.com/sparks/procedure/2> .
+
+<https://www.example.com/sparks/system/61/actuatableproperty/0> a sosa:ActuatableProperty ;
+    rdfs:label "\"_Robot04FC\".ResetAfterBreakReleased" ;
+    sparks:propertyLinkedTo <https://www.example.com/sparks/procedure/60/processoutput/0> .
+
+<https://www.example.com/sparks/system/61/actuatableproperty/1> a sosa:ActuatableProperty ;
+    rdfs:label "\"_Robot4FC\".AD_RobotInSimuHomePos" ;
+    sparks:propertyLinkedTo <https://www.example.com/sparks/procedure/1/processoutput/0> .
+
+<https://www.example.com/sparks/system/61/observableproperty/0> a sosa:ObservableProperty ;
+    rdfs:label "_Robot04_Data" ;
+    sparks:propertyLinkedTo <https://www.example.com/sparks/procedure/1/processinput/0>,
+        <https://www.example.com/sparks/procedure/59/processinput/0> .
+
+<https://www.example.com/sparks/system/63/observableproperty/0> a sosa:ObservableProperty ;
+    rdfs:label "_MZPIBC1_OpDesk" ;
+    sparks:propertyLinkedTo <https://www.example.com/sparks/procedure/59/processinput/2>,
+        <https://www.example.com/sparks/procedure/59/processinput/3> .
+
+<https://www.example.com/sparks/procedure/1> a sparks:procedure ;
+    rdf:description "**** 2.2 Alarms - Alarms Generation ****" ;
+    sparks:hasNextProcedure <https://www.example.com/sparks/procedure/2> .
+
+<https://www.example.com/sparks/procedure/60> a sparks:procedure ;
+    rdf:description "**** 4.4 Machine Status - Calculated ****" .
+
+<https://www.example.com/sparks/procedure/2> a sparks:procedure ;
+    rdf:description "**** 4.4 Machine Status - Calculated ****" ;
+    sparks:calls <https://www.example.com/sparks/process/3> ;
+    sparks:hasNextProcedure <https://www.example.com/sparks/procedure/59> .
+
+<https://www.example.com/sparks/procedure/59> a sparks:procedure ;
+    rdf:description "**** 4.4 Machine Status - Calculated ****" ;
+    sparks:hasNextProcedure <https://www.example.com/sparks/procedure/60> .
+

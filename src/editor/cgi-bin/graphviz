@@ -1,0 +1,70 @@
+digraph {
+  charset="utf-8";
+
+  // Edges
+  "RRobot04" -> "Rhttp://www.w3.org/ns/ssn/system" [label="rdf:type"];
+  "RRobot04" -> "Ractuatableproperty_0" [label="ssn:actsOnProperty"];
+  "RRobot04" -> "Ractuatableproperty_1" [label="ssn:actsOnProperty"];
+  "RRobot04" -> "R_Robot04_Data" [label="ssn:observes"];
+  "RModezone" -> "Rhttp://www.w3.org/ns/ssn/system" [label="rdf:type"];
+  "RModezone" -> "R_MZPIBC1_OpDesk" [label="ssn:observes"];
+  "R_Robot04_Data.StatusRobot.Rob_InSimuHomePos" -> "Rhttps://sparks.idlab.ugent.be/ProcessInput" [label="rdfs:type"];
+  "R_Robot04_Data.StatusRobot.Rob_InSimuHomePos" -> "R**** 2.2 Alarms - Alarms Generation  1 ****" [label="sparks:isProcessInputOf
+"];
+  "R_Robot04FC.AD_RobInSimuHomePos" -> "Rhttps://sparks.idlab.ugent.be/ProcessOutput" [label="rdfs:type"];
+  "R_Robot04FC.AD_RobInSimuHomePos" -> "R**** 2.2 Alarms - Alarms Generation  1 ****" [label="sparks:isProcessOutputOf"];
+  "R_Robot04_Data.FromRob.doBreakReleased" -> "Rhttps://sparks.idlab.ugent.be/ProcessInput" [label="rdfs:type"];
+  "R_Robot04_Data.FromRob.doBreakReleased" -> "R**** 4.4 Machine Status - Calculated 4 ****" [label="sparks:isProcessInputOf"];
+  "R_MZPIBC1_OpDesk.SwAS2_T1" -> "Rhttps://sparks.idlab.ugent.be/ProcessInput" [label="rdfs:type"];
+  "R_MZPIBC1_OpDesk.SwAS2_T1" -> "R**** 4.4 Machine Status - Calculated 4 ****" [label="sparks:isProcessInputOf"];
+  "R_MZPIBC1_OpDesk.SwAS1_Cleaning" -> "Rhttps://sparks.idlab.ugent.be/ProcessInput" [label="rdfs:type"];
+  "R_MZPIBC1_OpDesk.SwAS1_Cleaning" -> "R**** 4.4 Machine Status - Calculated 4 ****" [label="sparks:isProcessInputOf"];
+  "R_Robot04FC.ResetAfterBreakReleased" -> "Rhttps://sparks.idlab.ugent.be/ProcessOutput" [label="rdfs:type"];
+  "R_Robot04FC.ResetAfterBreakReleased" -> "R**** 4.4 Machine Status - Calculated  2 ****" [label="sparks:isProcessOutputOf"];
+  "RRobot04Safety()" -> "Rhttps://sparks.idlab.ugent.be/process" [label="rdf:type"];
+  "RRobot04Safety()" -> "R**** 4.4 Machine Status - Calculated  3 ****" [label="sparks:hasProcedure"];
+  "Ractuatableproperty_0" -> "Rhttp://www.w3.org/ns/sosa/ActuatableProperty" [label="rdf:type"];
+  "Ractuatableproperty_0" -> "R_Robot04FC.ResetAfterBreakReleased" [label="sparks:propertyLinkedTo"];
+  "Ractuatableproperty_1" -> "Rhttp://www.w3.org/ns/sosa/ActuatableProperty" [label="rdf:type"];
+  "Ractuatableproperty_1" -> "R_Robot04FC.AD_RobInSimuHomePos" [label="sparks:propertyLinkedTo"];
+  "R_Robot04_Data" -> "Rhttp://www.w3.org/ns/sosa/ObservableProperty" [label="rdf:type"];
+  "R_Robot04_Data" -> "R_Robot04_Data.StatusRobot.Rob_InSimuHomePos" [label="sparks:propertyLinkedTo"];
+  "R_Robot04_Data" -> "R_Robot04_Data.FromRob.doBreakReleased" [label="sparks:propertyLinkedTo"];
+  "R_MZPIBC1_OpDesk" -> "Rhttp://www.w3.org/ns/sosa/ObservableProperty" [label="rdf:type"];
+  "R_MZPIBC1_OpDesk" -> "R_MZPIBC1_OpDesk.SwAS2_T1" [label="sparks:propertyLinkedTo"];
+  "R_MZPIBC1_OpDesk" -> "R_MZPIBC1_OpDesk.SwAS1_Cleaning" [label="sparks:propertyLinkedTo"];
+  "R**** 2.2 Alarms - Alarms Generation  1 ****" -> "Rhttps://sparks.idlab.ugent.be/procedure" [label="rdf:type"];
+  "R**** 2.2 Alarms - Alarms Generation  1 ****" -> "R**** 4.4 Machine Status - Calculated  3 ****" [label="sparks:hasNextProcedure"];
+  "R**** 4.4 Machine Status - Calculated  2 ****" -> "Rhttps://sparks.idlab.ugent.be/procedure" [label="rdf:type"];
+  "R**** 4.4 Machine Status - Calculated  3 ****" -> "Rhttps://sparks.idlab.ugent.be/procedure" [label="rdf:type"];
+  "R**** 4.4 Machine Status - Calculated  3 ****" -> "RRobot04Safety()" [label="sparks:calls"];
+  "R**** 4.4 Machine Status - Calculated  3 ****" -> "R**** 4.4 Machine Status - Calculated 4 ****" [label="sparks:hasNextProcedure"];
+  "R**** 4.4 Machine Status - Calculated 4 ****" -> "Rhttps://sparks.idlab.ugent.be/procedure" [label="rdf:type"];
+  "R**** 4.4 Machine Status - Calculated 4 ****" -> "R**** 4.4 Machine Status - Calculated  2 ****" [label="sparks:hasNextProcedure"];
+
+  // Nodes
+  "Rhttp://www.w3.org/ns/sosa/ActuatableProperty" [URL="http://www.w3.org/ns/sosa/ActuatableProperty",label="sosa:ActuatableProperty",shape=rectangle,color=black];
+  "Rhttp://www.w3.org/ns/sosa/ObservableProperty" [URL="http://www.w3.org/ns/sosa/ObservableProperty",label="sosa:ObservableProperty",shape=rectangle,color=black];
+  "Rhttp://www.w3.org/ns/ssn/system" [URL="http://www.w3.org/ns/ssn/system",label="ssn:system",shape=rectangle,color=black];
+  "Rhttps://sparks.idlab.ugent.be/ProcessInput" [URL="https://sparks.idlab.ugent.be/ProcessInput",label="https://sparks.idlab.ugent.be/ProcessInput",shape=rectangle,color=orange];
+  "Rhttps://sparks.idlab.ugent.be/ProcessOutput" [URL="https://sparks.idlab.ugent.be/ProcessOutput",label="https://sparks.idlab.ugent.be/ProcessOutput",shape=rectangle,color=orange];
+  "Rhttps://sparks.idlab.ugent.be/procedure" [URL="https://sparks.idlab.ugent.be/procedure",label="https://sparks.idlab.ugent.be/procedure",shape=rectangle,color=orange];
+  "Rhttps://sparks.idlab.ugent.be/process" [URL="https://sparks.idlab.ugent.be/process",label="https://sparks.idlab.ugent.be/process",shape=rectangle,color=orange];
+  "R**** 2.2 Alarms - Alarms Generation  1 ****" [URL="**** 2.2 Alarms - Alarms Generation  1 ****",label="**** 2.2 Alarms - Alarms Generation  1 ****",shape=ellipse,color=purple];
+  "R_Robot04_Data.StatusRobot.Rob_InSimuHomePos" [URL="_Robot04_Data.StatusRobot.Rob_InSimuHomePos",label="_Robot04_Data.StatusRobot.Rob_InSimuHomePos",shape=ellipse,color=gray];
+  "R_Robot04FC.AD_RobInSimuHomePos" [URL="_Robot04FC.AD_RobInSimuHomePos",label="_Robot04FC.AD_RobInSimuHomePos",shape=ellipse,color=gray];
+  "R**** 4.4 Machine Status - Calculated  3 ****" [URL="**** 4.4 Machine Status - Calculated  3 ****",label="**** 4.4 Machine Status - Calculated  3 ****",shape=ellipse,color=purple];
+  "R**** 4.4 Machine Status - Calculated 4 ****" [URL="**** 4.4 Machine Status - Calculated 4 ****",label="**** 4.4 Machine Status - Calculated 4 ****",shape=ellipse,color=purple];
+  "R_Robot04_Data.FromRob.doBreakReleased" [URL="_Robot04_Data.FromRob.doBreakReleased",label="_Robot04_Data.FromRob.doBreakReleased",shape=ellipse,color=gray];
+  "R_MZPIBC1_OpDesk.SwAS2_T1" [URL="_MZPIBC1_OpDesk.SwAS2_T1",label="_MZPIBC1_OpDesk.SwAS2_T1",shape=ellipse,color=gray];
+  "R_MZPIBC1_OpDesk.SwAS1_Cleaning" [URL="_MZPIBC1_OpDesk.SwAS1_Cleaning",label="_MZPIBC1_OpDesk.SwAS1_Cleaning",shape=ellipse,color=gray];
+  "R**** 4.4 Machine Status - Calculated  2 ****" [URL="**** 4.4 Machine Status - Calculated  2 ****",label="**** 4.4 Machine Status - Calculated  2 ****",shape=ellipse,color=purple];
+  "R_Robot04FC.ResetAfterBreakReleased" [URL="_Robot04FC.ResetAfterBreakReleased",label="_Robot04FC.ResetAfterBreakReleased",shape=ellipse,color=gray];
+  "RRobot04Safety()" [URL="Robot04Safety()",label="Robot04Safety()",shape=ellipse,color=blue];
+  "RRobot04" [URL="Robot04",label="Robot04",shape=ellipse,color=green];
+  "Ractuatableproperty_0" [URL="actuatableproperty_0",label="actuatableproperty_0",shape=ellipse,color=gray];
+  "Ractuatableproperty_1" [URL="actuatableproperty_1",label="actuatableproperty_1",shape=ellipse,color=gray];
+  "R_Robot04_Data" [URL="_Robot04_Data",label="_Robot04_Data",shape=ellipse,color=gray];
+  "RModezone" [URL="Modezone",label="Modezone",shape=ellipse,color=green];
+  "R_MZPIBC1_OpDesk" [URL="_MZPIBC1_OpDesk",label="_MZPIBC1_OpDesk",shape=ellipse,color=gray];
+}
