@@ -1,0 +1,391 @@
+<h2 id="crossreference" class="list">Cross-reference for SPARKS classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by SPARKS.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure"> <span>Procedure</span> </a></li>
+  <li><a href="#ProcedureInput" title="https://predict-idlab.github.io/SPARKS/ProcedureInput"> <span>Procedure Input</span> </a></li>
+  <li><a href="#ProcedureOutput" title="https://predict-idlab.github.io/SPARKS/ProcedureOutput"> <span>Procedure Output</span> </a></li>
+  <li><a href="#Process" title="https://predict-idlab.github.io/SPARKS/Process"> <span>Process</span> </a></li>
+  <li><a href="#SensorPropertyService" title="https://predict-idlab.github.io/SPARKS/SensorPropertyService">Sensor Property Service</a></li>
+ </ul>
+ <div class="entity" id="Procedure">
+  <h3>Procedure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/Procedure</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/Procedure" target="_blank" title="http://www.w3.org/ns/sosa/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasNextProcedure" title="https://predict-idlab.github.io/SPARKS/hasNextProcedure">has Next Procedure</a> <sup class="type-op" title="object property">op</sup>, <a href="#isProcedureOf" title="https://predict-idlab.github.io/SPARKS/isProcedureOf">is Procedure Of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#calledFromProcedure" title="https://predict-idlab.github.io/SPARKS/calledFromProcedure">called From Procedure</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasNextProcedure" title="https://predict-idlab.github.io/SPARKS/hasNextProcedure">has Next Procedure</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProcedure" title="https://predict-idlab.github.io/SPARKS/hasProcedure">has Procedure</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProcedureInput" title="https://predict-idlab.github.io/SPARKS/hasProcedureInput">has Procedure Input</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ProcedureInput">
+  <h3>Procedure Input<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/ProcedureInput</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="https://predict-idlab.github.io/SPARKS/isProcedureInputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcedureInputOf">is Procedure Input Of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://predict-idlab.github.io/SPARKS/Parameter" target="_blank" title="https://predict-idlab.github.io/SPARKS/Parameter">Parameter</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasProcedureInput" title="https://predict-idlab.github.io/SPARKS/hasProcedureInput">has Procedure Input</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ProcedureOutput">
+  <h3>Procedure Output<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/ProcedureOutput</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="https://predict-idlab.github.io/SPARKS/isProcessOutputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcessOutputOf">is Process Output Of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://predict-idlab.github.io/SPARKS/Parameter" target="_blank" title="https://predict-idlab.github.io/SPARKS/Parameter">Parameter</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#outputPropagatesTo" title="https://predict-idlab.github.io/SPARKS/outputPropagatesTo">output Propagates To</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Process">
+  <h3>Process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/Process</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#isProcedureOf" title="https://predict-idlab.github.io/SPARKS/isProcedureOf">is Procedure Of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#calledFromProcedure" title="https://predict-idlab.github.io/SPARKS/calledFromProcedure">called From Procedure</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProcedure" title="https://predict-idlab.github.io/SPARKS/hasProcedure">has Procedure</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isProcedureOf" title="https://predict-idlab.github.io/SPARKS/isProcedureOf">is Procedure Of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SensorPropertyService">
+  <h3>Sensor Property Service<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/SensorPropertyService</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    (<a href="#hasServiceProperty" title="https://predict-idlab.github.io/SPARKS/hasServiceProperty">has Service Property</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="http://www.w3.org/ns/ssn/Property" target="_blank" title="http://www.w3.org/ns/ssn/Property">Property</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#hasServiceSensor" title="https://predict-idlab.github.io/SPARKS/hasServiceSensor">has Service Sensor</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="http://www.w3.org/ns/sosa/Sensor" target="_blank" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasServiceProperty" title="https://predict-idlab.github.io/SPARKS/hasServiceProperty">has Service Property</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasServiceSensor" title="https://predict-idlab.github.io/SPARKS/hasServiceSensor">has Service Sensor</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#alarmPropagatedFrom" title="https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom"> <span>alarm Propagated From</span> </a></li>
+  <li><a href="#calledFromProcedure" title="https://predict-idlab.github.io/SPARKS/calledFromProcedure"> <span>called From Procedure</span> </a></li>
+  <li><a href="#hasDependency" title="https://predict-idlab.github.io/SPARKS/hasDependency"> <span>has Dependency</span> </a></li>
+  <li><a href="#hasNextProcedure" title="https://predict-idlab.github.io/SPARKS/hasNextProcedure"> <span>has Next Procedure</span> </a></li>
+  <li><a href="#hasProcedure" title="https://predict-idlab.github.io/SPARKS/hasProcedure"> <span>has Procedure</span> </a></li>
+  <li><a href="#hasProcedureInput" title="https://predict-idlab.github.io/SPARKS/hasProcedureInput"> <span>has Procedure Input</span> </a></li>
+  <li><a href="#hasProcessOutput" title="https://predict-idlab.github.io/SPARKS/hasProcessOutput"> <span>has Process Output</span> </a></li>
+  <li><a href="#hasServiceProperty" title="https://predict-idlab.github.io/SPARKS/hasServiceProperty"> <span>has Service Property</span> </a></li>
+  <li><a href="#hasServiceSensor" title="https://predict-idlab.github.io/SPARKS/hasServiceSensor"> <span>has Service Sensor</span> </a></li>
+  <li><a href="#isProcedureOf" title="https://predict-idlab.github.io/SPARKS/isProcedureOf"> <span>is Procedure Of</span> </a></li>
+  <li><a href="#outputPropagatesTo" title="https://predict-idlab.github.io/SPARKS/outputPropagatesTo"> <span>output Propagates To</span> </a></li>
+  <li><a href="#parameterRelatesTo" title="https://predict-idlab.github.io/SPARKS/parameterRelatesTo"> <span>parameter Relates To</span> </a></li>
+  <li><a href="#propertyLinkedTo" title="https://predict-idlab.github.io/SPARKS/propertyLinkedTo"> <span>property Linked To</span> </a></li>
+ </ul>
+ <div class="entity" id="alarmPropagatedFrom">
+  <h3>alarm Propagated From<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm" target="_blank" title="http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm">Alarm</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="calledFromProcedure">
+  <h3>called From Procedure<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/calledFromProcedure</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Process" title="https://predict-idlab.github.io/SPARKS/Process">Process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/calledProcess" target="_blank" title="https://predict-idlab.github.io/SPARKS/calledProcess">called Process</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDependency">
+  <h3>has Dependency<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasDependency</p>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/isDependecyOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isDependecyOf">is Dependecy Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasNextProcedure">
+  <h3>has Next Procedure<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasNextProcedure</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/hasPreviousProcedure" target="_blank" title="https://predict-idlab.github.io/SPARKS/hasPreviousProcedure">has Previous Procedure</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasProcedure">
+  <h3>has Procedure<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasProcedure</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Process" title="https://predict-idlab.github.io/SPARKS/Process">Process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasProcedureInput">
+  <h3>has Procedure Input<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasProcedureInput</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ProcedureInput" title="https://predict-idlab.github.io/SPARKS/ProcedureInput">Procedure Input</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/isProcedureInputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcedureInputOf">is Procedure Input Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasProcessOutput">
+  <h3>has Process Output<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasProcessOutput</p>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/isProcessOutputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcessOutputOf">is Process Output Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasServiceProperty">
+  <h3>has Service Property<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasServiceProperty</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SensorPropertyService" title="https://predict-idlab.github.io/SPARKS/SensorPropertyService">Sensor Property Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasServiceSensor">
+  <h3>has Service Sensor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasServiceSensor</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SensorPropertyService" title="https://predict-idlab.github.io/SPARKS/SensorPropertyService">Sensor Property Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isProcedureOf">
+  <h3>is Procedure Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/isProcedureOf</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Process" title="https://predict-idlab.github.io/SPARKS/Process">Process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="outputPropagatesTo">
+  <h3>output Propagates To<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/outputPropagatesTo</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ProcedureOutput" title="https://predict-idlab.github.io/SPARKS/ProcedureOutput">Procedure Output</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="parameterRelatesTo">
+  <h3>parameter Relates To<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/parameterRelatesTo</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/Parameter" target="_blank" title="https://predict-idlab.github.io/SPARKS/Parameter">Parameter</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="propertyLinkedTo">
+  <h3>property Linked To<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/propertyLinkedTo</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://predict-idlab.github.io/SPARKS/Parameter" target="_blank" title="https://predict-idlab.github.io/SPARKS/Parameter">Parameter</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
