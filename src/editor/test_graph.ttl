@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sparks: <https://sparks.idlab.ugent.be/> .
+
+<https://www.example.com/sparks/procedure/2/processinput/0> rdfs:label "In" ;
+    rdfs:type sparks:ProcessInput ;
+    sparks:isProcessInputOf <https://www.example.com/sparks/procedure/2> .
+
+<https://www.example.com/sparks/process/1> a sparks:process ;
+    rdf:description "test1" .
+
+<https://www.example.com/sparks/procedure/2> a sparks:procedure ;
+    rdf:description "Test2" .
+

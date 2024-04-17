@@ -164,6 +164,16 @@ Editor.prototype.onCloudButton = function() {
                 data: { param: data},
             }).done(function( o ) {
                 console.log(o)
+                var file = new Blob([o]);
+                var url = URL.createObjectURL(file);
+                var element = document.createElement("a");
+                element.setAttribute('href', url);
+                element.setAttribute('download', "untitled.ttl");
+                element.style.display = 'none';
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+                setTimeout(function () { URL.revokeObjectURL(url); }, 1000 * 60);
             });
         }
 
