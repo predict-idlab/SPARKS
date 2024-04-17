@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.com/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.com/plc/1">
+    <ns1:hasInstance>TrfInInterlock</ns1:hasInstance>
+    <ns1:hasOrigin>PR20903</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/4">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R01</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/prod/0">
+    <ns1:offsetR03HV rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR03HV>
+    <ns1:offsetR09atomRS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR09atomRS>
+    <ns1:modesR091>Normal</ns1:modesR091>
+    <ns1:offsetR09shape1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR09shape1>
+    <ns1:modesR082>null</ns1:modesR082>
+    <ns1:metricSTNCT rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87.0</ns1:metricSTNCT>
+    <ns1:consumptiontotalfluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1130.0</ns1:consumptiontotalfluid>
+    <ns1:offsetR02atomRS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR02atomRS>
+    <ns1:modesR081>Normal</ns1:modesR081>
+    <ns1:station>PIBC1</ns1:station>
+    <ns1:metricVP413P04BF1value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.3</ns1:metricVP413P04BF1value>
+    <ns1:modesR021>Normal</ns1:modesR021>
+    <ns1:modesR051>Normal</ns1:modesR051>
+    <ns1:offsetR02fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR02fluid>
+    <ns1:bodybodynumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3076989.0</ns1:bodybodynumber>
+    <ns1:modesR071>Normal</ns1:modesR071>
+    <ns1:offsetR09HV rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR09HV>
+    <ns1:modesR041>Normal</ns1:modesR041>
+    <ns1:offsetR08HV rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR08HV>
+    <ns1:modesSTN2>Normal</ns1:modesSTN2>
+    <ns1:offsetR08fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR08fluid>
+    <ns1:locationcode>B4332150</ns1:locationcode>
+    <ns1:offsetR03atomRS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR03atomRS>
+    <ns1:offsetR09fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR09fluid>
+    <ns1:offsetR03shape2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR03shape2>
+    <ns1:consumptionR09fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">347.0</ns1:consumptionR09fluid>
+    <ns1:modesR061>Normal</ns1:modesR061>
+    <ns1:metricKP413P04BT1value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</ns1:metricKP413P04BT1value>
+    <ns1:offsetR08atomRS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR08atomRS>
+    <ns1:consumptionR02fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115.0</ns1:consumptionR02fluid>
+    <ns1:modesR031>Normal</ns1:modesR031>
+    <ns1:offsetR08shape2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR08shape2>
+    <ns1:consumptionR03fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">337.0</ns1:consumptionR03fluid>
+    <ns1:modesR032>null</ns1:modesR032>
+    <ns1:modesR02pipe rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns1:modesR02pipe>
+    <ns1:offsetR03shape1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR03shape1>
+    <ns1:modesR011>Normal</ns1:modesR011>
+    <ns1:modesR09pipe rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns1:modesR09pipe>
+    <ns1:bodytypemasked rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2200000.0</ns1:bodytypemasked>
+    <ns1:modesSTNpipe rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns1:modesSTNpipe>
+    <ns1:metricSTNWO rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ns1:metricSTNWO>
+    <ns1:offsetR09shape2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR09shape2>
+    <ns1:modesR022>null</ns1:modesR022>
+    <ns1:offsetR03fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR03fluid>
+    <ns1:offsetR08shape1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR08shape1>
+    <ns1:offsetR02shape1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR02shape1>
+    <ns1:modesR08pipe rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns1:modesR08pipe>
+    <ns1:offsetR02shape2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR02shape2>
+    <ns1:offsetR02HV rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ns1:offsetR02HV>
+    <ns1:metricSTNWI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</ns1:metricSTNWI>
+    <ns1:consumptionR08fluid rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">331.0</ns1:consumptionR08fluid>
+    <ns1:modesR101>Normal</ns1:modesR101>
+    <ns1:modesSTN1>null</ns1:modesSTN1>
+    <ns1:modesR03pipe rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns1:modesR03pipe>
+    <ns1:metricKP413P04BM1value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49.9</ns1:metricKP413P04BM1value>
+    <ns1:modesR092>null</ns1:modesR092>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/3076989">
+    <rdf:type rdf:resource="http://volvocars.com/car"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/0"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/1"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/2"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/3"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/4"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/5"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/6"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/7"/>
+    <ns1:hasPLCFault rdf:resource="http://example.com/plc/8"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/0"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/1"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/2"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/3"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/4"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/5"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/6"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/7"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/8"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/9"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/10"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/11"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/12"/>
+    <ns1:hasRobotFault rdf:resource="http://example.com/robot/13"/>
+    <ns1:hasProdLog rdf:resource="http://example.com/prod/0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/6">
+    <ns1:hasInstance>AcofDetReset</ns1:hasInstance>
+    <ns1:hasOrigin>LP6ECP94VM1</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/Fault">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/1">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R10</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/bodyType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/2">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R07</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/0">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R10</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/6">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PICC1R06</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/3">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R06</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/primer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/3">
+    <ns1:hasInstance>AcofDetReset</ns1:hasInstance>
+    <ns1:hasOrigin>LP6ECP94VM1</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/8">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R10</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://volvocars.com/_">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/4">
+    <ns1:hasInstance>AcofDetReset</ns1:hasInstance>
+    <ns1:hasOrigin>LP6ECP94VM1</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/13">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R06</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/0">
+    <ns1:hasInstance>DetOnTimeMaxAlm</ns1:hasInstance>
+    <ns1:hasOrigin>PR20906CheckDet</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/2">
+    <ns1:hasInstance>TrfInInterlock</ns1:hasInstance>
+    <ns1:hasOrigin>PR20903</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/metricVP413P04BF1value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/7">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R01</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/8">
+    <ns1:hasInstance>AcofDetReset</ns1:hasInstance>
+    <ns1:hasOrigin>LP6ECP94VM1</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/11">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R10</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/7">
+    <ns1:hasInstance>AcofDetReset</ns1:hasInstance>
+    <ns1:hasOrigin>LP6ECP94VM1</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/10">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R10</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/5">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PICC1R07</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/12">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R07</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/robot/9">
+    <ns1:hasTitle>Corner path failure</ns1:hasTitle>
+    <ns1:hasSource>PIBC1R10</ns1:hasSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/plc/5">
+    <ns1:hasInstance>AcofDetReset</ns1:hasInstance>
+    <ns1:hasOrigin>LP6ECP94VM1</ns1:hasOrigin>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/hasProdLog">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

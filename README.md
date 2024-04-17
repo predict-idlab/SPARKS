@@ -6,7 +6,9 @@ This repository contains the SPARKS methodology, a comprehensive solution design
 
 The SPARKS upper ontology can be found in within the docs folder and the documentation itself is made available at: [https://predict-idlab.github.io/SPARKS/](https://predict-idlab.github.io/SPARKS/)
 
-The editor and the instruction how to run the editor can be found at the src folder. This src folder also contain example PLC files that can be loaded to verify the editor mappings.
+The SPARKS GUI editor and the instruction how to run the editor can be found in the "editor" folder. This src folder also contain example PLC files that can be loaded to verify the editor mappings.
+
+Within the application folder, you can find the python rule-based framework that takes was created to show the advantage of this SPARKS methodology within the Volvo Cars O&O project.
 
 
 # Referencing
