@@ -1,5 +1,8 @@
-# Run editor
+# SPARKS GUI Editor
 
+[![SPARKS GUI Editor](https://github.com/predict-idlab/SPARKS/blob/main/img/sparks_editor.gif)](https://youtu.be/BzLiNpzNHU8)
+
+# Run editor
 ## Installation steps:
 
 To run the editor, make sure a sparql endpoint is available such as the editor dynamically loads the observable properties from this service.
