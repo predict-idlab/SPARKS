@@ -65,7 +65,7 @@ This section provides details for each class and property defined by SPARKS.
     is equivalent to
    </dt>
    <dd>
-    <a href="https://predict-idlab.github.io/SPARKS/isProcessOutputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcessOutputOf">is Process Output Of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf">is Procedure Output Of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has super-classes
@@ -132,7 +132,7 @@ This section provides details for each class and property defined by SPARKS.
   <li><a href="#hasNextProcedure" title="https://predict-idlab.github.io/SPARKS/hasNextProcedure"> <span>has Next Procedure</span> </a></li>
   <li><a href="#hasProcedure" title="https://predict-idlab.github.io/SPARKS/hasProcedure"> <span>has Procedure</span> </a></li>
   <li><a href="#hasProcedureInput" title="https://predict-idlab.github.io/SPARKS/hasProcedureInput"> <span>has Procedure Input</span> </a></li>
-  <li><a href="#hasProcessOutput" title="https://predict-idlab.github.io/SPARKS/hasProcessOutput"> <span>has Process Output</span> </a></li>
+  <li><a href="#hasProcedureOutput" title="https://predict-idlab.github.io/SPARKS/hasProcedureOutput"> <span>has Procedure Output</span> </a></li>
   <li><a href="#hasServiceProperty" title="https://predict-idlab.github.io/SPARKS/hasServiceProperty"> <span>has Service Property</span> </a></li>
   <li><a href="#hasServiceSensor" title="https://predict-idlab.github.io/SPARKS/hasServiceSensor"> <span>has Service Sensor</span> </a></li>
   <li><a href="#isProcedureOf" title="https://predict-idlab.github.io/SPARKS/isProcedureOf"> <span>is Procedure Of</span> </a></li>
@@ -246,6 +246,12 @@ This section provides details for each class and property defined by SPARKS.
   <div class="description">
    <dl>
     <dt>
+    has super-classes
+    </dt>
+    <dd>
+    <a href="http://www.w3.org/ns/ssn/hasInput" target="_blank" title="http://www.w3.org/ns/ssn/hasInput">Parameter</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
      has domain
     </dt>
     <dd>
@@ -266,17 +272,35 @@ This section provides details for each class and property defined by SPARKS.
    </dl>
   </div>
  </div>
- <div class="entity" id="hasProcessOutput">
+ <div class="entity" id="hasProcedureOutput">
   <h3>has Process Output<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://predict-idlab.github.io/SPARKS/hasProcessOutput</p>
   <div class="description">
-   <dl>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="https://predict-idlab.github.io/SPARKS/isProcessOutputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcessOutputOf">is Process Output Of</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
+    <dl>
+        <dt>
+        has super-classes
+        </dt>
+        <dd>
+        <a href="http://www.w3.org/ns/ssn/hasOutput" target="_blank" title="http://www.w3.org/ns/ssn/hasOutput">Parameter</a> <sup class="type-op" title="object property">op</sup>
+        </dd>
+        <dt>
+         has domain
+        </dt>
+        <dd>
+         <a href="#ProcedureOutput" title="https://predict-idlab.github.io/SPARKS/ProcedureOutput">Procedure Input</a> <sup class="type-c" title="class">c</sup>
+        </dd>
+        <dt>
+         has range
+        </dt>
+        <dd>
+         <a href="#Procedure" title="https://predict-idlab.github.io/SPARKS/Procedure">Procedure</a> <sup class="type-c" title="class">c</sup>
+        </dd>
+        <dt>
+         is inverse of
+        </dt>
+        <dd>
+         <a href="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf" target="_blank" title="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf">is Procedure Output Of</a> <sup class="type-op" title="object property">op</sup>
+        </dd>
    </dl>
   </div>
  </div>

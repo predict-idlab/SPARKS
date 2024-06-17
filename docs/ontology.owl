@@ -25,12 +25,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom">
         <rdfs:domain rdf:resource="http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm"/>
@@ -39,7 +37,6 @@
 
 
     <!-- https://predict-idlab.github.io/SPARKS/calledFromProcedure -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/calledFromProcedure">
         <owl:inverseOf rdf:resource="https://predict-idlab.github.io/SPARKS/calledProcess"/>
@@ -51,13 +48,11 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/calledProcess -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/calledProcess"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasDependency -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasDependency">
         <owl:inverseOf rdf:resource="https://predict-idlab.github.io/SPARKS/isDependecyOf"/>
@@ -66,7 +61,6 @@
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasNextProcedure -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasNextProcedure">
         <owl:inverseOf rdf:resource="https://predict-idlab.github.io/SPARKS/hasPreviousProcedure"/>
@@ -78,13 +72,11 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/hasPreviousProcedure -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasPreviousProcedure"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasProcedure -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasProcedure">
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/Process"/>
@@ -95,8 +87,8 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/hasProcedureInput -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasProcedureInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasInput"/>
         <owl:inverseOf rdf:resource="https://predict-idlab.github.io/SPARKS/isProcedureInputOf"/>
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/ProcedureInput"/>
         <rdfs:range rdf:resource="https://predict-idlab.github.io/SPARKS/Procedure"/>
@@ -104,17 +96,18 @@
     
 
 
-    <!-- https://predict-idlab.github.io/SPARKS/hasProcessOutput -->
+    <!-- https://predict-idlab.github.io/SPARKS/hasProcedureOutput -->
 
-
-    <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasProcessOutput">
-        <owl:inverseOf rdf:resource="https://predict-idlab.github.io/SPARKS/isProcessOutputOf"/>
+    <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasProcedureOutput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasOutput"/>
+        <owl:inverseOf rdf:resource="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf"/>
+        <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/ProcedureOutput"/>
+        <rdfs:range rdf:resource="https://predict-idlab.github.io/SPARKS/Procedure"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasServiceProperty -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasServiceProperty">
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/SensorPropertyService"/>
@@ -124,7 +117,6 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/hasServiceSensor -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasServiceSensor">
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/SensorPropertyService"/>
     </owl:ObjectProperty>
@@ -133,20 +125,17 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/isDependecyOf -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/isDependecyOf"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/isProcedureInputOf -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/isProcedureInputOf"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/isProcedureOf -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/isProcedureOf">
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/Procedure"/>
@@ -155,15 +144,13 @@
     
 
 
-    <!-- https://predict-idlab.github.io/SPARKS/isProcessOutputOf -->
+    <!-- https://predict-idlab.github.io/SPARKS/isProcedureOutputOf -->
 
-
-    <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/isProcessOutputOf"/>
+    <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/outputPropagatesTo -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/outputPropagatesTo">
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/ProcedureOutput"/>
@@ -173,7 +160,6 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/parameterRelatesTo -->
 
-
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/parameterRelatesTo">
         <rdfs:domain rdf:resource="https://predict-idlab.github.io/SPARKS/Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
@@ -182,7 +168,6 @@
 
 
     <!-- https://predict-idlab.github.io/SPARKS/propertyLinkedTo -->
-
 
     <owl:ObjectProperty rdf:about="https://predict-idlab.github.io/SPARKS/propertyLinkedTo">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
@@ -199,12 +184,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasServiceEndpoint -->
-
 
     <owl:DatatypeProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasServiceEndpoint"/>
     
@@ -212,20 +195,17 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/hasServiceSchema -->
 
-
     <owl:DatatypeProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasServiceSchema"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasServiceSignal -->
 
-
     <owl:DatatypeProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasServiceSignal"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/hasServiceTable -->
-
 
     <owl:DatatypeProperty rdf:about="https://predict-idlab.github.io/SPARKS/hasServiceTable"/>
     
@@ -239,12 +219,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm -->
-
 
     <owl:Class rdf:about="http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm"/>
     
@@ -252,20 +230,17 @@
 
     <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
 
-
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
     
 
 
     <!-- http://www.w3.org/ns/sosa/Procedure -->
 
-
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Procedure"/>
     
 
 
     <!-- http://www.w3.org/ns/sosa/Sensor -->
-
 
     <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor">
         <owl:disjointWith rdf:resource="https://predict-idlab.github.io/SPARKS/SensorPropertyService"/>
@@ -275,7 +250,6 @@
 
     <!-- http://www.w3.org/ns/ssn/Property -->
 
-
     <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Property">
         <owl:disjointWith rdf:resource="https://predict-idlab.github.io/SPARKS/SensorPropertyService"/>
     </rdf:Description>
@@ -284,13 +258,11 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/Parameter -->
 
-
     <owl:Class rdf:about="https://predict-idlab.github.io/SPARKS/Parameter"/>
     
 
 
     <!-- https://predict-idlab.github.io/SPARKS/Procedure -->
-
 
     <owl:Class rdf:about="https://predict-idlab.github.io/SPARKS/Procedure">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
@@ -299,7 +271,6 @@
 
 
     <!-- https://predict-idlab.github.io/SPARKS/ProcedureInput -->
-
 
     <owl:Class rdf:about="https://predict-idlab.github.io/SPARKS/ProcedureInput">
         <owl:equivalentClass>
@@ -315,11 +286,10 @@
 
     <!-- https://predict-idlab.github.io/SPARKS/ProcedureOutput -->
 
-
     <owl:Class rdf:about="https://predict-idlab.github.io/SPARKS/ProcedureOutput">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://predict-idlab.github.io/SPARKS/isProcessOutputOf"/>
+                <owl:onProperty rdf:resource="https://predict-idlab.github.io/SPARKS/isProcedureOutputOf"/>
                 <owl:someValuesFrom rdf:resource="https://predict-idlab.github.io/SPARKS/Procedure"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -329,7 +299,6 @@
 
 
     <!-- https://predict-idlab.github.io/SPARKS/Process -->
-
 
     <owl:Class rdf:about="https://predict-idlab.github.io/SPARKS/Process">
         <owl:equivalentClass>
@@ -343,7 +312,6 @@
 
 
     <!-- https://predict-idlab.github.io/SPARKS/SensorPropertyService -->
-
 
     <owl:Class rdf:about="https://predict-idlab.github.io/SPARKS/SensorPropertyService">
         <owl:equivalentClass>
@@ -366,6 +334,5 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

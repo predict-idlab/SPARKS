@@ -1,183 +1,91 @@
 <https://predict-idlab.github.io/SPARKS/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://predict-idlab.github.io/SPARKS/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
-# 
-# 
-# #################################################################
-# #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom
 <https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/alarmPropagatedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm> .
-# 
-# https://predict-idlab.github.io/SPARKS/calledFromProcedure
 <https://predict-idlab.github.io/SPARKS/calledFromProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/calledFromProcedure> <http://www.w3.org/2002/07/owl#inverseOf> <https://predict-idlab.github.io/SPARKS/calledProcess> .
 <https://predict-idlab.github.io/SPARKS/calledFromProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/Process> .
 <https://predict-idlab.github.io/SPARKS/calledFromProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Procedure> .
-# 
-# https://predict-idlab.github.io/SPARKS/calledProcess
 <https://predict-idlab.github.io/SPARKS/calledProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasDependency
 <https://predict-idlab.github.io/SPARKS/hasDependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/hasDependency> <http://www.w3.org/2002/07/owl#inverseOf> <https://predict-idlab.github.io/SPARKS/isDependecyOf> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasNextProcedure
 <https://predict-idlab.github.io/SPARKS/hasNextProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/hasNextProcedure> <http://www.w3.org/2002/07/owl#inverseOf> <https://predict-idlab.github.io/SPARKS/hasPreviousProcedure> .
 <https://predict-idlab.github.io/SPARKS/hasNextProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/Procedure> .
 <https://predict-idlab.github.io/SPARKS/hasNextProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Procedure> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasPreviousProcedure
 <https://predict-idlab.github.io/SPARKS/hasPreviousProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasProcedure
 <https://predict-idlab.github.io/SPARKS/hasProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/hasProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/Process> .
 <https://predict-idlab.github.io/SPARKS/hasProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Procedure> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasProcedureInput
 <https://predict-idlab.github.io/SPARKS/hasProcedureInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://predict-idlab.github.io/SPARKS/hasProcedureInput> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasInput> .
 <https://predict-idlab.github.io/SPARKS/hasProcedureInput> <http://www.w3.org/2002/07/owl#inverseOf> <https://predict-idlab.github.io/SPARKS/isProcedureInputOf> .
 <https://predict-idlab.github.io/SPARKS/hasProcedureInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/ProcedureInput> .
 <https://predict-idlab.github.io/SPARKS/hasProcedureInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Procedure> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasProcessOutput
-<https://predict-idlab.github.io/SPARKS/hasProcessOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://predict-idlab.github.io/SPARKS/hasProcessOutput> <http://www.w3.org/2002/07/owl#inverseOf> <https://predict-idlab.github.io/SPARKS/isProcessOutputOf> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasServiceProperty
+<https://predict-idlab.github.io/SPARKS/hasProcedureOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://predict-idlab.github.io/SPARKS/hasProcedureOutput> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasOutput> .
+<https://predict-idlab.github.io/SPARKS/hasProcedureOutput> <http://www.w3.org/2002/07/owl#inverseOf> <https://predict-idlab.github.io/SPARKS/isProcedureOutputOf> .
+<https://predict-idlab.github.io/SPARKS/hasProcedureOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/ProcedureOutput> .
+<https://predict-idlab.github.io/SPARKS/hasProcedureOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Procedure> .
 <https://predict-idlab.github.io/SPARKS/hasServiceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/hasServiceProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/SensorPropertyService> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasServiceSensor
 <https://predict-idlab.github.io/SPARKS/hasServiceSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/hasServiceSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/SensorPropertyService> .
-# 
-# https://predict-idlab.github.io/SPARKS/isDependecyOf
 <https://predict-idlab.github.io/SPARKS/isDependecyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/isProcedureInputOf
 <https://predict-idlab.github.io/SPARKS/isProcedureInputOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/isProcedureOf
 <https://predict-idlab.github.io/SPARKS/isProcedureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/isProcedureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/Procedure> .
 <https://predict-idlab.github.io/SPARKS/isProcedureOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Process> .
-# 
-# https://predict-idlab.github.io/SPARKS/isProcessOutputOf
-<https://predict-idlab.github.io/SPARKS/isProcessOutputOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/outputPropagatesTo
+<https://predict-idlab.github.io/SPARKS/isProcedureOutputOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/outputPropagatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/outputPropagatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/ProcedureOutput> .
-# 
-# https://predict-idlab.github.io/SPARKS/parameterRelatesTo
 <https://predict-idlab.github.io/SPARKS/parameterRelatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/parameterRelatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://predict-idlab.github.io/SPARKS/Parameter> .
 <https://predict-idlab.github.io/SPARKS/parameterRelatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/ObservableProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/propertyLinkedTo
 <https://predict-idlab.github.io/SPARKS/propertyLinkedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://predict-idlab.github.io/SPARKS/propertyLinkedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <https://predict-idlab.github.io/SPARKS/propertyLinkedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://predict-idlab.github.io/SPARKS/Parameter> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# https://predict-idlab.github.io/SPARKS/hasServiceEndpoint
 <https://predict-idlab.github.io/SPARKS/hasServiceEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasServiceSchema
 <https://predict-idlab.github.io/SPARKS/hasServiceSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasServiceSignal
 <https://predict-idlab.github.io/SPARKS/hasServiceSignal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# https://predict-idlab.github.io/SPARKS/hasServiceTable
 <https://predict-idlab.github.io/SPARKS/hasServiceTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm
 <http://IBCNServices.github.io/Folio-Ontology/Folio.owl#Alarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/ns/sosa/ObservableProperty
 <http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/ns/sosa/Procedure
 <http://www.w3.org/ns/sosa/Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/ns/sosa/Sensor
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2002/07/owl#disjointWith> <https://predict-idlab.github.io/SPARKS/SensorPropertyService> .
-# 
-# http://www.w3.org/ns/ssn/Property
 <http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2002/07/owl#disjointWith> <https://predict-idlab.github.io/SPARKS/SensorPropertyService> .
-# 
-# https://predict-idlab.github.io/SPARKS/Parameter
 <https://predict-idlab.github.io/SPARKS/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://predict-idlab.github.io/SPARKS/Procedure
 <https://predict-idlab.github.io/SPARKS/Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://predict-idlab.github.io/SPARKS/Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Procedure> .
-# 
-# https://predict-idlab.github.io/SPARKS/ProcedureInput
 <https://predict-idlab.github.io/SPARKS/ProcedureInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://predict-idlab.github.io/SPARKS/ProcedureInput> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://predict-idlab.github.io/SPARKS/Procedure> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/isProcedureInputOf> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://predict-idlab.github.io/SPARKS/ProcedureInput> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://predict-idlab.github.io/SPARKS/Parameter> .
-# 
-# https://predict-idlab.github.io/SPARKS/ProcedureOutput
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/isProcedureInputOf> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://predict-idlab.github.io/SPARKS/Procedure> .
 <https://predict-idlab.github.io/SPARKS/ProcedureOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://predict-idlab.github.io/SPARKS/ProcedureOutput> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://predict-idlab.github.io/SPARKS/Procedure> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/isProcessOutputOf> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://predict-idlab.github.io/SPARKS/ProcedureOutput> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://predict-idlab.github.io/SPARKS/Parameter> .
-# 
-# https://predict-idlab.github.io/SPARKS/Process
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/isProcedureOutputOf> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://predict-idlab.github.io/SPARKS/Procedure> .
 <https://predict-idlab.github.io/SPARKS/Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://predict-idlab.github.io/SPARKS/Process> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://predict-idlab.github.io/SPARKS/Procedure> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/isProcedureOf> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-# 
-# https://predict-idlab.github.io/SPARKS/SensorPropertyService
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/isProcedureOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://predict-idlab.github.io/SPARKS/Procedure> .
 <https://predict-idlab.github.io/SPARKS/SensorPropertyService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://predict-idlab.github.io/SPARKS/SensorPropertyService> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/sosa/Sensor> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/hasServiceSensor> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/ssn/Property> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/hasServiceProperty> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://predict-idlab.github.io/SPARKS/SensorPropertyService> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor Property Service" .
-# 
-# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/hasServiceProperty> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/ssn/Property> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://predict-idlab.github.io/SPARKS/hasServiceSensor> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/sosa/Sensor> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid5 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

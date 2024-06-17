@@ -11,7 +11,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://predict-idlab.github.io/SPARKS/isProcessOutputOf"
+    "@id" : "https://predict-idlab.github.io/SPARKS/isProcedureOutputOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://predict-idlab.github.io/SPARKS/Procedure"
@@ -180,14 +180,26 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://predict-idlab.github.io/SPARKS/Procedure"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasInput"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://predict-idlab.github.io/SPARKS/isProcedureInputOf"
   } ]
 }, {
-  "@id" : "https://predict-idlab.github.io/SPARKS/hasProcessOutput",
+  "@id" : "https://predict-idlab.github.io/SPARKS/hasProcedureOutput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://predict-idlab.github.io/SPARKS/ProcedureOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://predict-idlab.github.io/SPARKS/Procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasOutput"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://predict-idlab.github.io/SPARKS/isProcessOutputOf"
+    "@id" : "https://predict-idlab.github.io/SPARKS/isProcedureOutputOf"
   } ]
 }, {
   "@id" : "https://predict-idlab.github.io/SPARKS/hasServiceEndpoint",
@@ -229,7 +241,7 @@
     "@id" : "https://predict-idlab.github.io/SPARKS/Process"
   } ]
 }, {
-  "@id" : "https://predict-idlab.github.io/SPARKS/isProcessOutputOf",
+  "@id" : "https://predict-idlab.github.io/SPARKS/isProcedureOutputOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://predict-idlab.github.io/SPARKS/outputPropagatesTo",
